@@ -17,7 +17,7 @@ module DE10_NANO_SoC_GHRD(
       ///////// FPGA /////////
       input              FPGA_CLK1_50,
       input              FPGA_CLK2_50,
-      input              FPGA_CLK3_50,
+      input              FPGA_CLK3_50, 
 
       ///////// GPIO /////////
       inout       [35:0] GPIO_0,
@@ -31,7 +31,7 @@ module DE10_NANO_SoC_GHRD(
       inout              HDMI_MCLK,
       inout              HDMI_SCLK,
       output             HDMI_TX_CLK,
-      output      [23:0] HDMI_TX_D,
+      output      [23:0] HDMI_TX_D, 
       output             HDMI_TX_DE,
       output             HDMI_TX_HS,
       input              HDMI_TX_INT,
@@ -114,10 +114,6 @@ wire                hps_debug_reset;
 //  Structural coding
 //=======================================================
 
-assign GPIO_1[30] = ~GPIO_1[18]; // fan control 5V dc-dc converter
-assign GPIO_1[31] = ~GPIO_1[19]; // fan control 12V dc-dc converter
-
-wire signed [31:0] current_average[7:0];
 `ifdef ENABLE_HPS
 soc_system u0(
 			//Clock&Reset
@@ -127,75 +123,19 @@ soc_system u0(
 			.led_external_connection_export(LED),
 			// switches 
 			.switches_0_external_connection_export(SW),
-			// myocontrol
-			.myocontrol_0_conduit_end_mosi(ARDUINO_IO[1]),
-			.myocontrol_0_conduit_end_miso(ARDUINO_IO[0]),
-			.myocontrol_0_conduit_end_sck(ARDUINO_IO[2]),
-			.myocontrol_0_conduit_end_ss_n_o({GPIO_1[7:2],ARDUINO_IO[12:3]}),
-			.myocontrol_0_conduit_end_mirrored_muscle_unit(1'b0), 
-			.myocontrol_0_conduit_end_power_sense_n(~GPIO_1[24] && SW[3]),
-			// balljoints
-			.balljoint_0_conduit_end_sda(GPIO_0[13]),
-			.balljoint_0_conduit_end_scl(GPIO_0[15]),
-			.balljoint_1_conduit_end_sda(GPIO_0[17]),
-			.balljoint_1_conduit_end_scl(GPIO_0[19]),
-			.balljoint_2_conduit_end_sda(GPIO_0[21]),
-			.balljoint_2_conduit_end_scl(GPIO_0[23]),
-//			.balljoint_3_conduit_end_sda(GPIO_0[25]),
-//			.balljoint_3_conduit_end_scl(GPIO_0[27]),
-//			.balljoint_3_conduit_end_reset_n(GPIO_0[18]),
-//			.balljoint_4_conduit_end_sda(GPIO_0[29]),
-//			.balljoint_4_conduit_end_scl(GPIO_0[31]),
-//			.balljoint_4_conduit_end_reset_n(GPIO_0[20]),
-////			.balljoint_5_conduit_end_sda(GPIO_0[33]),
-////			.balljoint_5_conduit_end_scl(GPIO_0[35]),
-////			.balljoint_5_conduit_end_reset_n(GPIO_0[22]),
-////			.balljoint_6_conduit_end_sda(GPIO_0[34]),
-////			.balljoint_6_conduit_end_scl(GPIO_0[32]),
-////			.balljoint_6_conduit_end_reset_n(GPIO_0[24]),
-//			.icebuscontrol_0_conduit_end_rx(GPIO_0[0]),
-//			.icebuscontrol_0_conduit_end_tx(GPIO_0[1]),
-//			.icebuscontrol_0_conduit_end_current_average(current_average[0]),
-//			.icebuscontrol_1_conduit_end_rx(GPIO_0[2]),
-//			.icebuscontrol_1_conduit_end_tx(GPIO_0[3]),
-//			.icebuscontrol_1_conduit_end_current_average(current_average[1]),
-//			.icebuscontrol_2_conduit_end_rx(GPIO_0[4]),
-//			.icebuscontrol_2_conduit_end_tx(GPIO_0[5]),
-//			.icebuscontrol_2_conduit_end_current_average(current_average[2]),
-////			.icebuscontrol_3_conduit_end_rx(GPIO_0[6]),
-////			.icebuscontrol_3_conduit_end_tx(GPIO_0[7]),
-////			.icebuscontrol_3_conduit_end_current_average(current_average[3]),
-////			.icebuscontrol_4_conduit_end_rx(GPIO_0[8]),
-////			.icebuscontrol_4_conduit_end_tx(GPIO_0[9]),
-////			.icebuscontrol_4_conduit_end_current_average(current_average[4]),
-////			.icebuscontrol_5_conduit_end_rx(GPIO_0[10]),
-////			.icebuscontrol_5_conduit_end_tx(GPIO_0[11]),
-////			.icebuscontrol_5_conduit_end_current_average(current_average[5]),
-			.icebuscontrol_6_conduit_end_rx(GPIO_1[8]),
-			.icebuscontrol_6_conduit_end_tx(GPIO_1[9]),
-			.icebuscontrol_6_conduit_end_current_average(current_average[6]),
-//			.icebuscontrol_7_conduit_end_rx(GPIO_1[10]),
-//			.icebuscontrol_7_conduit_end_tx(GPIO_1[11]),
-//			.icebuscontrol_7_conduit_end_current_average(current_average[7]),
 			.fancontrol_0_conduit_end_pwm(GPIO_1[35]),
-			.fancontrol_0_conduit_end_current_average(current_average[0]),
 			.fancontrol_1_conduit_end_pwm(GPIO_1[34]),
-			.fancontrol_1_conduit_end_current_average(current_average[1]),
 			.fancontrol_2_conduit_end_pwm(GPIO_1[33]),
-			.fancontrol_2_conduit_end_current_average(current_average[2]), 
 			.fancontrol_3_conduit_end_pwm(GPIO_1[32]),
-			.fancontrol_3_conduit_end_current_average(current_average[3]), 
-			.power_sense_0_external_connection_export(GPIO_1[29:24]),
-			.power_control_0_external_connection_export(GPIO_1[19:18]),
 			// auxiliary sensors
 			.auxilliary_i2c_0_conduit_end_sda(GPIO_1[0]),
 			.auxilliary_i2c_0_conduit_end_scl(GPIO_1[1]),
-//			.auxilliary_i2c_1_conduit_end_sda(GPIO_1[2]),
-//			.auxilliary_i2c_1_conduit_end_scl(GPIO_1[3]), 
-//			.auxilliary_i2c_2_conduit_end_sda(GPIO_1[4]),
-//			.auxilliary_i2c_2_conduit_end_scl(GPIO_1[5]), 
-//			.auxilliary_i2c_3_conduit_end_sda(GPIO_1[6]),
-//			.auxilliary_i2c_3_conduit_end_scl(GPIO_1[7]),
+			.auxilliary_i2c_1_conduit_end_sda(GPIO_1[2]),
+			.auxilliary_i2c_1_conduit_end_scl(GPIO_1[3]), 
+			.auxilliary_i2c_2_conduit_end_sda(GPIO_1[4]),
+			.auxilliary_i2c_2_conduit_end_scl(GPIO_1[5]), 
+			.auxilliary_i2c_3_conduit_end_sda(GPIO_1[6]),
+			.auxilliary_i2c_3_conduit_end_scl(GPIO_1[7]),
 			//HPS ddr3
 			.memory_mem_a(HPS_DDR3_ADDR),                                //                         memory.mem_a
 			.memory_mem_ba(HPS_DDR3_BA),                                 //                               .mem_ba
