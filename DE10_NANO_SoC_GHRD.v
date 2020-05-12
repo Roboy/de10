@@ -153,9 +153,9 @@ soc_system u0(
 ////			.balljoint_6_conduit_end_sda(GPIO_0[34]),
 ////			.balljoint_6_conduit_end_scl(GPIO_0[32]),
 ////			.balljoint_6_conduit_end_reset_n(GPIO_0[24]),
-//			.icebuscontrol_0_conduit_end_rx(GPIO_0[0]),
-//			.icebuscontrol_0_conduit_end_tx(GPIO_0[1]),
-//			.icebuscontrol_0_conduit_end_current_average(current_average[0]),
+			.icebuscontrol_0_conduit_end_rx(GPIO_0[0]),
+			.icebuscontrol_0_conduit_end_tx(GPIO_0[1]),
+			.icebuscontrol_0_conduit_end_current_average(current_average[0]),
 //			.icebuscontrol_1_conduit_end_rx(GPIO_0[2]),
 //			.icebuscontrol_1_conduit_end_tx(GPIO_0[3]),
 //			.icebuscontrol_1_conduit_end_current_average(current_average[1]),
@@ -187,7 +187,7 @@ soc_system u0(
 			.fancontrol_3_conduit_end_current_average(current_average[3]), 
 			.power_sense_0_external_connection_export(GPIO_1[29:24]),
 			.power_control_0_external_connection_export(GPIO_1[19:18]),
-			// auxiliary sensors
+			// auxiliary sensors 
 			.auxilliary_i2c_0_conduit_end_sda(GPIO_1[0]),
 			.auxilliary_i2c_0_conduit_end_scl(GPIO_1[1]),
 //			.auxilliary_i2c_1_conduit_end_sda(GPIO_1[2]),
@@ -277,28 +277,28 @@ soc_system u0(
            );
 `else
 	
-	reg reset_this;
-	
-	
-	always @(posedge FPGA_CLK1_50) begin: RESET_THIS
-		integer counter;
-		counter <= counter+1;
-		if(counter>100_000_000)begin
-			reset_this <= 1;
-			counter <= 0;
-		end
-		if(reset_this)begin
-			reset_this<=0;
-		end
-	end 
-
-	soc_system u0(
-		.clk_clk(FPGA_CLK1_50),
-			.reset_reset_n(1'b1),
-			.balljoint_0_conduit_end_sda(GPIO_0[13]),
-			.balljoint_0_conduit_end_scl(GPIO_0[15]),
-			.balljoint_0_conduit_end_reset_n(GPIO_0[12])
-	);
+//	reg reset_this;
+//	
+//	
+//	always @(posedge FPGA_CLK1_50) begin: RESET_THIS
+//		integer counter;
+//		counter <= counter+1;
+//		if(counter>100_000_000)begin
+//			reset_this <= 1;
+//			counter <= 0;
+//		end
+//		if(reset_this)begin
+//			reset_this<=0;
+//		end
+//	end 
+//
+//	soc_system u0(
+//		.clk_clk(FPGA_CLK1_50),
+//			.reset_reset_n(1'b1),
+//			.balljoint_0_conduit_end_sda(GPIO_0[13]),
+//			.balljoint_0_conduit_end_scl(GPIO_0[15]),
+//			.balljoint_0_conduit_end_reset_n(GPIO_0[12])
+//	);
 			  
 `endif /*ENABLE_HPS*/
 			  
