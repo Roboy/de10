@@ -196,6 +196,10 @@ soc_system u0(
 //			.auxilliary_i2c_2_conduit_end_scl(GPIO_1[5]), 
 //			.auxilliary_i2c_3_conduit_end_sda(GPIO_1[6]),
 //			.auxilliary_i2c_3_conduit_end_scl(GPIO_1[7]),
+			// current sensors
+			.tli4970_conduit_end_spi_clk(GPIO_1[21]),
+			.tli4970_conduit_end_spi_cs({GPIO_1[22],GPIO_1[20]}),
+			.tli4970_conduit_end_spi_miso(GPIO_1[23]),
 			//HPS ddr3
 			.memory_mem_a(HPS_DDR3_ADDR),                                //                         memory.mem_a
 			.memory_mem_ba(HPS_DDR3_BA),                                 //                               .mem_ba
