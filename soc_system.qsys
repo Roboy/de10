@@ -13,7 +13,7 @@
    {
       datum _sortIndex
       {
-         value = "21";
+         value = "6";
          type = "int";
       }
    }
@@ -21,135 +21,7 @@
    {
       datum baseAddress
       {
-         value = "4672";
-         type = "String";
-      }
-   }
-   element BALLJOINT_1
-   {
-      datum _sortIndex
-      {
-         value = "22";
-         type = "int";
-      }
-   }
-   element BALLJOINT_1.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4608";
-         type = "String";
-      }
-   }
-   element BALLJOINT_2
-   {
-      datum _sortIndex
-      {
-         value = "23";
-         type = "int";
-      }
-   }
-   element BALLJOINT_2.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4544";
-         type = "String";
-      }
-   }
-   element BALLJOINT_3
-   {
-      datum _sortIndex
-      {
-         value = "24";
-         type = "int";
-      }
-   }
-   element BALLJOINT_3.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4224";
-         type = "String";
-      }
-   }
-   element BALLJOINT_4
-   {
-      datum _sortIndex
-      {
-         value = "25";
-         type = "int";
-      }
-   }
-   element BALLJOINT_4.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4160";
-         type = "String";
-      }
-   }
-   element FanControl_0
-   {
-      datum _sortIndex
-      {
-         value = "14";
-         type = "int";
-      }
-   }
-   element FanControl_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4128";
-         type = "String";
-      }
-   }
-   element FanControl_1
-   {
-      datum _sortIndex
-      {
-         value = "15";
-         type = "int";
-      }
-   }
-   element FanControl_1.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4736";
-         type = "String";
-      }
-   }
-   element FanControl_2
-   {
-      datum _sortIndex
-      {
-         value = "16";
-         type = "int";
-      }
-   }
-   element FanControl_2.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4768";
-         type = "String";
-      }
-   }
-   element FanControl_3
-   {
-      datum _sortIndex
-      {
-         value = "17";
-         type = "int";
-      }
-   }
-   element FanControl_3.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4800";
+         value = "64";
          type = "String";
       }
    }
@@ -165,71 +37,7 @@
    {
       datum baseAddress
       {
-         value = "4112";
-         type = "String";
-      }
-   }
-   element LED_0
-   {
-      datum _sortIndex
-      {
-         value = "26";
-         type = "int";
-      }
-   }
-   element LED_0.s1
-   {
-      datum baseAddress
-      {
-         value = "4832";
-         type = "String";
-      }
-   }
-   element MYOControl_0
-   {
-      datum _sortIndex
-      {
-         value = "20";
-         type = "int";
-      }
-   }
-   element MYOControl_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "262144";
-         type = "String";
-      }
-   }
-   element POWER_CONTROL
-   {
-      datum _sortIndex
-      {
-         value = "19";
-         type = "int";
-      }
-   }
-   element POWER_CONTROL.s1
-   {
-      datum baseAddress
-      {
-         value = "4848";
-         type = "String";
-      }
-   }
-   element POWER_SENSE
-   {
-      datum _sortIndex
-      {
-         value = "18";
-         type = "int";
-      }
-   }
-   element POWER_SENSE.s1
-   {
-      datum baseAddress
-      {
-         value = "4864";
+         value = "128";
          type = "String";
       }
    }
@@ -245,23 +53,7 @@
    {
       datum baseAddress
       {
-         value = "4880";
-         type = "String";
-      }
-   }
-   element TLI4970
-   {
-      datum _sortIndex
-      {
-         value = "31";
-         type = "int";
-      }
-   }
-   element TLI4970.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4104";
+         value = "144";
          type = "String";
       }
    }
@@ -269,7 +61,7 @@
    {
       datum _sortIndex
       {
-         value = "27";
+         value = "7";
          type = "int";
       }
    }
@@ -277,55 +69,7 @@
    {
       datum baseAddress
       {
-         value = "4480";
-         type = "String";
-      }
-   }
-   element auxilliary_i2c_1
-   {
-      datum _sortIndex
-      {
-         value = "28";
-         type = "int";
-      }
-   }
-   element auxilliary_i2c_1.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4416";
-         type = "String";
-      }
-   }
-   element auxilliary_i2c_2
-   {
-      datum _sortIndex
-      {
-         value = "29";
-         type = "int";
-      }
-   }
-   element auxilliary_i2c_2.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4352";
-         type = "String";
-      }
-   }
-   element auxilliary_i2c_3
-   {
-      datum _sortIndex
-      {
-         value = "30";
-         type = "int";
-      }
-   }
-   element auxilliary_i2c_3.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "4288";
+         value = "0";
          type = "String";
       }
    }
@@ -355,110 +99,6 @@
          type = "boolean";
       }
    }
-   element iCEbusControl_0
-   {
-      datum _sortIndex
-      {
-         value = "6";
-         type = "int";
-      }
-   }
-   element iCEbusControl_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "20480";
-         type = "String";
-      }
-   }
-   element iCEbusControl_1
-   {
-      datum _sortIndex
-      {
-         value = "7";
-         type = "int";
-      }
-   }
-   element iCEbusControl_1.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "16384";
-         type = "String";
-      }
-   }
-   element iCEbusControl_2
-   {
-      datum _sortIndex
-      {
-         value = "8";
-         type = "int";
-      }
-   }
-   element iCEbusControl_2.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "12288";
-         type = "String";
-      }
-   }
-   element iCEbusControl_3
-   {
-      datum _sortIndex
-      {
-         value = "9";
-         type = "int";
-      }
-   }
-   element iCEbusControl_4
-   {
-      datum _sortIndex
-      {
-         value = "10";
-         type = "int";
-      }
-   }
-   element iCEbusControl_5
-   {
-      datum _sortIndex
-      {
-         value = "11";
-         type = "int";
-      }
-   }
-   element iCEbusControl_6
-   {
-      datum _sortIndex
-      {
-         value = "12";
-         type = "int";
-      }
-   }
-   element iCEbusControl_6.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "24576";
-         type = "String";
-      }
-   }
-   element iCEbusControl_7
-   {
-      datum _sortIndex
-      {
-         value = "13";
-         type = "int";
-      }
-   }
-   element iCEbusControl_7.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "0";
-         type = "String";
-      }
-   }
    element jtag_uart
    {
       datum _sortIndex
@@ -482,6 +122,22 @@
       datum baseAddress
       {
          value = "8192";
+         type = "String";
+      }
+   }
+   element pwm_0
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element pwm_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "262144";
          type = "String";
       }
    }
@@ -1490,66 +1146,11 @@
    type="conduit"
    dir="end" />
  <interface
-   name="auxilliary_i2c_1_conduit_end"
-   internal="auxilliary_i2c_1.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="auxilliary_i2c_2_conduit_end"
-   internal="auxilliary_i2c_2.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="auxilliary_i2c_3_conduit_end"
-   internal="auxilliary_i2c_3.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
    name="balljoint_0_conduit_end"
    internal="BALLJOINT_0.conduit_end"
    type="conduit"
    dir="end" />
- <interface
-   name="balljoint_1_conduit_end"
-   internal="BALLJOINT_1.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="balljoint_2_conduit_end"
-   internal="BALLJOINT_2.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="balljoint_3_conduit_end"
-   internal="BALLJOINT_3.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="balljoint_4_conduit_end"
-   internal="BALLJOINT_4.conduit_end"
-   type="conduit"
-   dir="end" />
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
- <interface
-   name="fancontrol_0_conduit_end"
-   internal="FanControl_0.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="fancontrol_1_conduit_end"
-   internal="FanControl_1.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="fancontrol_2_conduit_end"
-   internal="FanControl_2.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="fancontrol_3_conduit_end"
-   internal="FanControl_3.conduit_end"
-   type="conduit"
-   dir="end" />
  <interface
    name="hps_0_f2h_cold_reset_req"
    internal="hps_0.f2h_cold_reset_req"
@@ -1574,59 +1175,14 @@
  <interface name="hps_0_h2f_user0_clock" internal="hps_0.h2f_user0_clock" />
  <interface name="hps_0_hps_io" internal="hps_0.hps_io" type="conduit" dir="end" />
  <interface
-   name="icebuscontrol_0_conduit_end"
-   internal="iCEbusControl_0.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="icebuscontrol_1_conduit_end"
-   internal="iCEbusControl_1.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="icebuscontrol_2_conduit_end"
-   internal="iCEbusControl_2.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="icebuscontrol_3_conduit_end"
-   internal="iCEbusControl_3.conduit_end" />
- <interface
-   name="icebuscontrol_4_conduit_end"
-   internal="iCEbusControl_4.conduit_end" />
- <interface
-   name="icebuscontrol_5_conduit_end"
-   internal="iCEbusControl_5.conduit_end" />
- <interface
-   name="icebuscontrol_6_conduit_end"
-   internal="iCEbusControl_6.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
-   name="icebuscontrol_7_conduit_end"
-   internal="iCEbusControl_7.conduit_end"
-   type="conduit"
-   dir="end" />
- <interface
    name="led_external_connection"
    internal="LED.external_connection"
    type="conduit"
    dir="end" />
- <interface
-   name="led_external_connection_1"
-   internal="LED_0.external_connection"
-   type="conduit"
-   dir="end" />
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
- <interface name="myocontrol_0_conduit_end" internal="MYOControl_0.conduit_end" />
  <interface
-   name="power_control_0_external_connection"
-   internal="POWER_CONTROL.external_connection"
-   type="conduit"
-   dir="end" />
- <interface
-   name="power_sense_0_external_connection"
-   internal="POWER_SENSE.external_connection"
+   name="pwm_0_conduit_end"
+   internal="pwm_0.conduit_end"
    type="conduit"
    dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
@@ -1635,41 +1191,8 @@
    internal="SWITCHES.external_connection"
    type="conduit"
    dir="end" />
- <interface
-   name="tli4970_conduit_end"
-   internal="TLI4970.conduit_end"
-   type="conduit"
-   dir="end" />
  <module name="BALLJOINT_0" kind="I2C" version="1.0" enabled="1">
   <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="BALLJOINT_1" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="BALLJOINT_2" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="BALLJOINT_3" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="BALLJOINT_4" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="FanControl_0" kind="FanControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="FanControl_1" kind="FanControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="FanControl_2" kind="FanControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="FanControl_3" kind="FanControl" version="1.0" enabled="1">
   <parameter name="CLOCK_SPEED_HZ" value="50000000" />
  </module>
  <module name="LED" kind="altera_avalon_pio" version="19.1" enabled="1">
@@ -1686,61 +1209,6 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="8" />
  </module>
- <module name="LED_0" kind="altera_avalon_pio" version="19.1" enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="255" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="8" />
- </module>
- <module name="MYOControl_0" kind="MYOControl" version="1.0" enabled="0">
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
-  <parameter name="ENABLE_MYOBRICK_CONTROL" value="0" />
-  <parameter name="NUMBER_OF_MOTORS" value="16" />
- </module>
- <module
-   name="POWER_CONTROL"
-   kind="altera_avalon_pio"
-   version="19.1"
-   enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="3" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="2" />
- </module>
- <module
-   name="POWER_SENSE"
-   kind="altera_avalon_pio"
-   version="19.1"
-   enabled="1">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="6" />
- </module>
  <module name="SWITCHES" kind="altera_avalon_pio" version="19.1" enabled="1">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -1755,25 +1223,7 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="4" />
  </module>
- <module name="TLI4970" kind="TLI4970" version="1.0" enabled="1">
-  <parameter name="CLOCK_DIVIDER" value="13" />
-  <parameter name="CLOCK_FREQ" value="50000000" />
-  <parameter name="NUMBER_OF_SENSORS" value="2" />
-  <parameter name="UPDATE_FREQ" value="100" />
- </module>
  <module name="auxilliary_i2c_0" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="auxilliary_i2c_1" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="auxilliary_i2c_2" kind="I2C" version="1.0" enabled="1">
-  <parameter name="BUS_SPEED_HZ" value="400000" />
-  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
- </module>
- <module name="auxilliary_i2c_3" kind="I2C" version="1.0" enabled="1">
   <parameter name="BUS_SPEED_HZ" value="400000" />
   <parameter name="CLOCK_SPEED_HZ" value="50000000" />
  </module>
@@ -2313,54 +1763,6 @@
   <parameter name="usb_mp_clk_div" value="0" />
   <parameter name="use_default_mpu_clk" value="true" />
  </module>
- <module name="iCEbusControl_0" kind="iCEbusControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="6" />
-  <parameter name="arm_coms" value="false" />
-  <parameter name="iceboard_coms" value="true" />
- </module>
- <module name="iCEbusControl_1" kind="iCEbusControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="10" />
-  <parameter name="arm_coms" value="false" />
-  <parameter name="iceboard_coms" value="true" />
- </module>
- <module name="iCEbusControl_2" kind="iCEbusControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="10" />
-  <parameter name="arm_coms" value="false" />
-  <parameter name="iceboard_coms" value="true" />
- </module>
- <module name="iCEbusControl_3" kind="iCEbusControl" version="1.0" enabled="0">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="6" />
-  <parameter name="arm_coms" value="false" />
-  <parameter name="iceboard_coms" value="true" />
- </module>
- <module name="iCEbusControl_4" kind="iCEbusControl" version="1.0" enabled="0">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="6" />
-  <parameter name="arm_coms" value="false" />
-  <parameter name="iceboard_coms" value="true" />
- </module>
- <module name="iCEbusControl_5" kind="iCEbusControl" version="1.0" enabled="0">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="6" />
-  <parameter name="arm_coms" value="false" />
-  <parameter name="iceboard_coms" value="true" />
- </module>
- <module name="iCEbusControl_6" kind="iCEbusControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="10" />
-  <parameter name="arm_coms" value="true" />
-  <parameter name="iceboard_coms" value="false" />
- </module>
- <module name="iCEbusControl_7" kind="iCEbusControl" version="1.0" enabled="1">
-  <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="10" />
-  <parameter name="arm_coms" value="true" />
-  <parameter name="iceboard_coms" value="false" />
- </module>
  <module
    name="jtag_uart"
    kind="altera_avalon_jtag_uart"
@@ -2379,6 +1781,14 @@
   <parameter name="useRelativePathForSimFile" value="false" />
   <parameter name="writeBufferDepth" value="64" />
   <parameter name="writeIRQThreshold" value="8" />
+ </module>
+ <module name="pwm_0" kind="pwm" version="1.0" enabled="1">
+  <parameter name="CLOCK_SPEED_HZ" value="50000000" />
+  <parameter name="NUMBER_OF_MOTORS" value="1" />
+  <parameter name="PWM_FREQ" value="50" />
+  <parameter name="PWM_PAUSE_FREQ" value="50000000" />
+  <parameter name="PWM_PHASES" value="1" />
+  <parameter name="PWM_RESOLUTION" value="12" />
  </module>
  <module
    name="sysid_qsys"
@@ -2400,108 +1810,9 @@
    kind="avalon"
    version="19.1"
    start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_3.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00014000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_4.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00010000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_5.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0xc000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
    end="BALLJOINT_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1240" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_6.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x6000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="BALLJOINT_1.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1200" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="BALLJOINT_2.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x11c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="FanControl_3.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x12c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="FanControl_2.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x12a0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="FanControl_1.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1280" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="FanControl_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1020" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5000" />
+  <parameter name="baseAddress" value="0x0040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2510,51 +1821,6 @@
    start="hps_0.h2f_lw_axi_master"
    end="auxilliary_i2c_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1180" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="MYOControl_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00040000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="TLI4970.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1008" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_1.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x4000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_2.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="iCEbusControl_7.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
@@ -2562,45 +1828,9 @@
    kind="avalon"
    version="19.1"
    start="hps_0.h2f_lw_axi_master"
-   end="auxilliary_i2c_1.avalon_slave_0">
+   end="pwm_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1140" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="auxilliary_i2c_2.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1100" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="auxilliary_i2c_3.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="BALLJOINT_3.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1080" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="BALLJOINT_4.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1040" />
+  <parameter name="baseAddress" value="0x00040000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2618,34 +1848,7 @@
    start="hps_0.h2f_lw_axi_master"
    end="SWITCHES.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1310" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="POWER_SENSE.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1300" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="POWER_CONTROL.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x12f0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="19.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="LED_0.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x12e0" />
+  <parameter name="baseAddress" value="0x0090" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2654,77 +1857,13 @@
    start="hps_0.h2f_lw_axi_master"
    end="LED.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1010" />
+  <parameter name="baseAddress" value="0x0080" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="19.1" start="clk_0.clk" end="sysid_qsys.clk" />
  <connection kind="clock" version="19.1" start="clk_0.clk" end="SWITCHES.clk" />
  <connection kind="clock" version="19.1" start="clk_0.clk" end="jtag_uart.clk" />
- <connection kind="clock" version="19.1" start="clk_0.clk" end="POWER_SENSE.clk" />
- <connection kind="clock" version="19.1" start="clk_0.clk" end="POWER_CONTROL.clk" />
- <connection kind="clock" version="19.1" start="clk_0.clk" end="LED_0.clk" />
  <connection kind="clock" version="19.1" start="clk_0.clk" end="LED.clk" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_3.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_4.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_5.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_6.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="FanControl_3.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="FanControl_2.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="FanControl_1.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="FanControl_0.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_0.clock" />
- <connection kind="clock" version="19.1" start="clk_0.clk" end="TLI4970.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_1.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_2.clock" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="iCEbusControl_7.clock" />
  <connection
    kind="clock"
    version="19.1"
@@ -2734,47 +1873,8 @@
    kind="clock"
    version="19.1"
    start="clk_0.clk"
-   end="BALLJOINT_1.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="BALLJOINT_2.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
    end="auxilliary_i2c_0.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="MYOControl_0.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="auxilliary_i2c_1.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="auxilliary_i2c_2.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="auxilliary_i2c_3.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="BALLJOINT_3.clock_sink" />
- <connection
-   kind="clock"
-   version="19.1"
-   start="clk_0.clk"
-   end="BALLJOINT_4.clock_sink" />
+ <connection kind="clock" version="19.1" start="clk_0.clk" end="pwm_0.clock_sink" />
  <connection
    kind="clock"
    version="19.1"
@@ -2806,129 +1906,14 @@
    kind="reset"
    version="19.1"
    start="clk_0.clk_reset"
-   end="iCEbusControl_3.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="iCEbusControl_4.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="iCEbusControl_5.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="POWER_SENSE.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="POWER_CONTROL.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
    end="BALLJOINT_0.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="iCEbusControl_6.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="BALLJOINT_1.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="BALLJOINT_2.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="FanControl_3.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="FanControl_2.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="FanControl_1.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="FanControl_0.reset" />
- <connection kind="reset" version="19.1" start="clk_0.clk_reset" end="LED_0.reset" />
  <connection kind="reset" version="19.1" start="clk_0.clk_reset" end="LED.reset" />
  <connection
    kind="reset"
    version="19.1"
    start="clk_0.clk_reset"
-   end="iCEbusControl_0.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
    end="auxilliary_i2c_0.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="MYOControl_0.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="TLI4970.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="iCEbusControl_1.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="iCEbusControl_2.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="iCEbusControl_7.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="auxilliary_i2c_1.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="auxilliary_i2c_2.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="auxilliary_i2c_3.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="BALLJOINT_3.reset" />
- <connection
-   kind="reset"
-   version="19.1"
-   start="clk_0.clk_reset"
-   end="BALLJOINT_4.reset" />
+ <connection kind="reset" version="19.1" start="clk_0.clk_reset" end="pwm_0.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>
