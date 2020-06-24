@@ -146,7 +146,7 @@ soc_system u0(
 			.balljoint_4_conduit_end_sda(GPIO_0[29]),
 			.balljoint_4_conduit_end_scl(GPIO_0[31]),
 ////			.balljoint_5_conduit_end_sda(GPIO_0[33]),
-////			.balljoint_5_conduit_end_scl(GPIO_0[35]),
+////			.balljoint_5_conduit_end_scl(GPIO_0[35]), 
 ////			.balljoint_5_conduit_end_reset_n(GPIO_0[22]),
 ////			.balljoint_6_conduit_end_sda(GPIO_0[34]),
 ////			.balljoint_6_conduit_end_scl(GPIO_0[32]),
