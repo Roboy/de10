@@ -21,13 +21,13 @@ module DE10_NANO_SoC_GHRD(
 
       ///////// GPIO /////////
       inout       [35:0] GPIO_0,
-      inout       [35:0] GPIO_1,
+      inout       [35:0] GPIO_1, 
 
       ///////// HDMI /////////
       inout              HDMI_I2C_SCL,
       inout              HDMI_I2C_SDA,
       inout              HDMI_I2S,
-      inout              HDMI_LRCLK,
+      inout              HDMI_LRCLK, 
       inout              HDMI_MCLK,
       inout              HDMI_SCLK,
       output             HDMI_TX_CLK,
@@ -125,8 +125,8 @@ soc_system u0(
 			.reset_reset_n(hps_fpga_reset_n),
 			// led
 			.led_external_connection_export(LED),
-			// switches 
-			.switches_0_external_connection_export(SW),
+//			// switches 
+//			.switches_0_external_connection_export(SW),
 //			// myocontrol
 //			.myocontrol_0_conduit_end_mosi(ARDUINO_IO[1]),
 //			.myocontrol_0_conduit_end_miso(ARDUINO_IO[0]),
@@ -160,9 +160,9 @@ soc_system u0(
 			.icebuscontrol_2_conduit_end_rx(GPIO_0[4]),
 			.icebuscontrol_2_conduit_end_tx(GPIO_0[5]),
 			.icebuscontrol_2_conduit_end_current_average(current_average[2]),
-////			.icebuscontrol_3_conduit_end_rx(GPIO_0[6]),
-////			.icebuscontrol_3_conduit_end_tx(GPIO_0[7]),
-////			.icebuscontrol_3_conduit_end_current_average(current_average[3]),
+			.icebuscontrol_3_conduit_end_rx(GPIO_0[6]),
+			.icebuscontrol_3_conduit_end_tx(GPIO_0[7]),
+			.icebuscontrol_3_conduit_end_current_average(current_average[3]),
 ////			.icebuscontrol_4_conduit_end_rx(GPIO_0[8]),
 ////			.icebuscontrol_4_conduit_end_tx(GPIO_0[9]),
 ////			.icebuscontrol_4_conduit_end_current_average(current_average[4]),
@@ -175,14 +175,14 @@ soc_system u0(
 			.icebuscontrol_7_conduit_end_rx(GPIO_1[10]),
 			.icebuscontrol_7_conduit_end_tx(GPIO_1[11]),
 			.icebuscontrol_7_conduit_end_current_average(current_average[7]),
-			.fancontrol_0_conduit_end_pwm(GPIO_1[35]),
-			.fancontrol_0_conduit_end_current_average(current_average[0]),
-			.fancontrol_1_conduit_end_pwm(GPIO_1[34]),
-			.fancontrol_1_conduit_end_current_average(current_average[1]),
-			.fancontrol_2_conduit_end_pwm(GPIO_1[33]),
-			.fancontrol_2_conduit_end_current_average(current_average[2]), 
-			.fancontrol_3_conduit_end_pwm(GPIO_1[32]),
-			.fancontrol_3_conduit_end_current_average(current_average[3]), 
+//			.fancontrol_0_conduit_end_pwm(GPIO_1[35]),
+//			.fancontrol_0_conduit_end_current_average(current_average[0]),
+//			.fancontrol_1_conduit_end_pwm(GPIO_1[34]),
+//			.fancontrol_1_conduit_end_current_average(current_average[1]),
+//			.fancontrol_2_conduit_end_pwm(GPIO_1[33]),
+//			.fancontrol_2_conduit_end_current_average(current_average[2]), 
+//			.fancontrol_3_conduit_end_pwm(GPIO_1[32]),
+//			.fancontrol_3_conduit_end_current_average(current_average[3]), 
 			.power_sense_0_external_connection_export(GPIO_1[29:24]),
 			.power_control_0_external_connection_export(GPIO_1[19:18]),
 			// auxiliary sensors 
@@ -190,10 +190,10 @@ soc_system u0(
 			.auxilliary_i2c_0_conduit_end_scl(GPIO_1[1]),
 			.auxilliary_i2c_1_conduit_end_sda(GPIO_1[2]),
 			.auxilliary_i2c_1_conduit_end_scl(GPIO_1[3]), 
-			.auxilliary_i2c_2_conduit_end_sda(GPIO_1[4]),
-			.auxilliary_i2c_2_conduit_end_scl(GPIO_1[5]), 
-			.auxilliary_i2c_3_conduit_end_sda(GPIO_1[6]),
-			.auxilliary_i2c_3_conduit_end_scl(GPIO_1[7]),
+//			.auxilliary_i2c_2_conduit_end_sda(GPIO_1[4]),
+//			.auxilliary_i2c_2_conduit_end_scl(GPIO_1[5]), 
+//			.auxilliary_i2c_3_conduit_end_sda(GPIO_1[6]),
+//			.auxilliary_i2c_3_conduit_end_scl(GPIO_1[7]),
 			// current sensors
 			.tli4970_conduit_end_spi_clk(GPIO_1[21]),
 			.tli4970_conduit_end_spi_cs({GPIO_1[22],GPIO_1[20]}),
