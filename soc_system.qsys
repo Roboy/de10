@@ -1504,10 +1504,14 @@
    dir="end" />
  <interface
    name="auxilliary_i2c_2_conduit_end"
-   internal="auxilliary_i2c_2.conduit_end" />
+   internal="auxilliary_i2c_2.conduit_end"
+   type="conduit"
+   dir="end" />
  <interface
    name="auxilliary_i2c_3_conduit_end"
-   internal="auxilliary_i2c_3.conduit_end" />
+   internal="auxilliary_i2c_3.conduit_end"
+   type="conduit"
+   dir="end" />
  <interface
    name="balljoint_0_conduit_end"
    internal="BALLJOINT_0.conduit_end"
@@ -1757,11 +1761,11 @@
   <parameter name="BUS_SPEED_HZ" value="400000" />
   <parameter name="CLOCK_SPEED_HZ" value="50000000" />
  </module>
- <module name="auxilliary_i2c_2" kind="I2C" version="1.0" enabled="0">
+ <module name="auxilliary_i2c_2" kind="I2C" version="1.0" enabled="1">
   <parameter name="BUS_SPEED_HZ" value="400000" />
   <parameter name="CLOCK_SPEED_HZ" value="50000000" />
  </module>
- <module name="auxilliary_i2c_3" kind="I2C" version="1.0" enabled="0">
+ <module name="auxilliary_i2c_3" kind="I2C" version="1.0" enabled="1">
   <parameter name="BUS_SPEED_HZ" value="400000" />
   <parameter name="CLOCK_SPEED_HZ" value="50000000" />
  </module>
@@ -2321,7 +2325,7 @@
  </module>
  <module name="iCEbusControl_3" kind="iCEbusControl" version="1.0" enabled="1">
   <parameter name="CLOCK_FREQ_HZ" value="50000000" />
-  <parameter name="NUMBER_OF_MOTORS" value="12" />
+  <parameter name="NUMBER_OF_MOTORS" value="10" />
   <parameter name="arm_coms" value="false" />
   <parameter name="iceboard_coms" value="true" />
  </module>
@@ -2550,24 +2554,6 @@
    kind="avalon"
    version="18.1"
    start="hps_0.h2f_lw_axi_master"
-   end="auxilliary_i2c_2.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1100" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="18.1"
-   start="hps_0.h2f_lw_axi_master"
-   end="auxilliary_i2c_3.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x10c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="18.1"
-   start="hps_0.h2f_lw_axi_master"
    end="BALLJOINT_3.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x1080" />
@@ -2589,6 +2575,24 @@
    end="iCEbusControl_3.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="auxilliary_i2c_2.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1100" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="hps_0.h2f_lw_axi_master"
+   end="auxilliary_i2c_3.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x10c0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2747,22 +2751,22 @@
    kind="clock"
    version="18.1"
    start="clk_0.clk"
-   end="auxilliary_i2c_2.clock_sink" />
- <connection
-   kind="clock"
-   version="18.1"
-   start="clk_0.clk"
-   end="auxilliary_i2c_3.clock_sink" />
- <connection
-   kind="clock"
-   version="18.1"
-   start="clk_0.clk"
    end="BALLJOINT_3.clock_sink" />
  <connection
    kind="clock"
    version="18.1"
    start="clk_0.clk"
    end="BALLJOINT_4.clock_sink" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="auxilliary_i2c_2.clock_sink" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clk_0.clk"
+   end="auxilliary_i2c_3.clock_sink" />
  <connection
    kind="clock"
    version="18.1"
@@ -2886,16 +2890,6 @@
    kind="reset"
    version="18.1"
    start="clk_0.clk_reset"
-   end="auxilliary_i2c_2.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="clk_0.clk_reset"
-   end="auxilliary_i2c_3.reset" />
- <connection
-   kind="reset"
-   version="18.1"
-   start="clk_0.clk_reset"
    end="BALLJOINT_3.reset" />
  <connection
    kind="reset"
@@ -2917,6 +2911,16 @@
    version="18.1"
    start="clk_0.clk_reset"
    end="SWITCHES.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="auxilliary_i2c_2.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="auxilliary_i2c_3.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>
