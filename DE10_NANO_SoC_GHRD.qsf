@@ -694,7 +694,7 @@ set_instance_assignment -name SLEW_RATE 0 -to GPIO_1[27]
 set_instance_assignment -name SLEW_RATE 0 -to GPIO_1[26]
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_0[31]
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_0[29]
-set_global_assignment -name IP_SEARCH_PATHS PROJECT_DIR/ip/**/*
+set_global_assignment -name IP_SEARCH_PATHS "/home/administrator/Documents/Roboy_FPGA/workspace/src/roboy_plexus/de10/ip;PROJECT_DIR/ip/**/*"
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_1[0]
 set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to GPIO_1[1]
 set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE AREA"

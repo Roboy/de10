@@ -109,6 +109,8 @@ wire     [2: 0]     hps_reset_req;
 wire                hps_cold_reset;
 wire                hps_warm_reset;
 wire                hps_debug_reset;
+//// IO Buffer Temp CAN 0
+wire 					  can0_rx, can0_tx; 
 
 //=======================================================
 //  Structural coding
@@ -275,7 +277,9 @@ soc_system u0(
 			.hps_0_h2f_reset_reset_n(hps_fpga_reset_n),                  //                hps_0_h2f_reset.reset_n
 			.hps_0_f2h_cold_reset_req_reset_n(~hps_cold_reset),          //       hps_0_f2h_cold_reset_req.reset_n
 			.hps_0_f2h_debug_reset_req_reset_n(~hps_debug_reset),        //      hps_0_f2h_debug_reset_req.reset_n
-			.hps_0_f2h_warm_reset_req_reset_n(~hps_warm_reset)          //       hps_0_f2h_warm_reset_req.reset_n
+			.hps_0_f2h_warm_reset_req_reset_n(~hps_warm_reset),          //       hps_0_f2h_warm_reset_req.reset_n
+			.hps_0_can0_rxd(can0_rx),												// can recieve message
+			.hps_0_can0_txd(can0_tx)												// can transieve message
            );
 `else
 	
@@ -351,6 +355,9 @@ altera_edge_detector pulse_debug_reset(
 defparam pulse_debug_reset.PULSE_EXT = 32;
 defparam pulse_debug_reset.EDGE_TYPE = 1;
 defparam pulse_debug_reset.IGNORE_RST_WHILE_BUSY = 1;
-
-
+// forward can to io pins
+ // CANO -> RX
+ ALT_IOBUF can0_rx_iobuf (.i(1'b0), .oe(1'b0), .o(can0_rx), .io(ARDUINO_IO[9]));
+ // CAN-> TX
+ ALT_IOBUF can0_tx_iobuf (.i(can0_tx), .oe(1'b1), .o(), .io(ARDUINO_IO[8]));
 endmodule
